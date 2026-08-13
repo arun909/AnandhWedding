@@ -782,6 +782,27 @@ section { padding: clamp(4rem, 10vw, 7rem) var(--gutter); max-width: var(--conta
 .footer-contact { font-family: var(--font-serif); font-size: clamp(1rem, 1.4vw, 1.15rem); opacity: 0.8; line-height: 1.9; }
 .footer-contact a { color: var(--gold-line); text-decoration: underline; text-underline-offset: 3px; }
 
+.btn-download {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 0.5em;
+  margin-top: clamp(1.5rem, 3vw, 2.25rem);
+  padding: 0.75rem 1.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--gold-line);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease;
+  white-space: nowrap;
+}
+.btn-download svg { width: 1.1em; height: 1.1em; flex-shrink: 0; }
+.btn-download:hover { background: var(--portrait-tan-soft); transform: translateY(-2px); }
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
